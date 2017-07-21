@@ -10,7 +10,7 @@ sudo -k
 sudo -v
 
 ## Preflight
-sudo apt-get install curl vpnc-scripts build-essential gettext pkg-config libssl-dev libxml2-dev liblz4-dev libstoken1 stoken
+sudo apt-get install -f curl vpnc-scripts build-essential gettext pkg-config libssl-dev libxml2-dev liblz4-dev libstoken1 stoken
 curl -O ftp://ftp.infradead.org/pub/openconnect/openconnect-${oc_ver}.tar.gz
 curl -O ftp://ftp.infradead.org/pub/openconnect/openconnect-${oc_ver}.tar.gz.asc
 gpg --keyserver pgp.mit.edu --recv-key 67e2f359
