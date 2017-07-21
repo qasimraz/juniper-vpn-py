@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import subprocess
@@ -25,7 +25,8 @@ import datetime
 
 debug = False
 
-ssl._create_default_https_context = ssl._create_unverified_context
+if sys.version_info >= (2,7,9):
+  ssl._create_default_https_context = ssl._create_unverified_context
 
 """
 OATH code from https://github.com/bdauvergne/python-oath
@@ -211,7 +212,7 @@ class juniper_vpn(object):
 
         # Enter username/password
         self.br.select_form(nr=0)
-        self.br.form['username'] = self.args.username
+        self.br.form['Username'] = self.args.username
         self.br.form['password'] = self.args.password
         if self.args.pass_prefix:
             if self.pass_postfix:

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import sys
@@ -26,7 +26,8 @@ import pyasn1_modules.rfc2459
 import pyasn1.codec.der.decoder
 import xml.etree.ElementTree
 
-ssl._create_default_https_context = ssl._create_unverified_context
+if sys.version_info >= (2,7,9):
+  ssl._create_default_https_context = ssl._create_unverified_context
 
 debug = False
 logging.basicConfig(stream=sys.stderr, level=logging.DEBUG if debug else logging.INFO)

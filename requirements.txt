@@ -1,0 +1,4 @@
+mechanize
+netifaces
+pycurl
+pyasn1-modules
