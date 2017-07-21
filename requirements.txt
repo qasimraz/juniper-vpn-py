@@ -1,4 +1,6 @@
+six==1.10.0
 mechanize
 netifaces
+urlgrabber
 pycurl
 pyasn1-modules
