@@ -14,3 +14,12 @@ Alternate instructions to allow juniper-vpn.py to perform authentication and
 tncc.py to perform host checking are contained in:
 
 README.authenticator
+
+sudo apt-get install git python-dev -f
+git clone https://github.com/darinsikanic/juniper-vpn-py.git
+cd juniper-vpn-py
+sudo bash openconnect-install.sh
+curl -O https://bootstrap.pypa.io/get-pip.py
+sudo python get-pip.py
+sudo pip install -r requirements.txt
+sudo ./juniper-vpn.py --host <HOST> --username <USERNAME> --stdin DSID=%DSID% openconnect --juniper %HOST% --cookie-on-stdin
