@@ -15,7 +15,7 @@ tncc.py to perform host checking are contained in:
 
 README.authenticator
 
-sudo apt-get install git python-dev -f
+sudo apt-get install git python-dev -y
 git clone https://github.com/darinsikanic/juniper-vpn-py.git
 cd juniper-vpn-py
 sudo bash openconnect-install.sh
