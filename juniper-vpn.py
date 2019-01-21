@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/home/vagrant/vpnenv/bin/python
 # -*- coding: utf-8 -*-
 
 import subprocess

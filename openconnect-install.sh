@@ -21,7 +21,7 @@ then
 else
   gpg --verify openconnect-${oc_ver}.tar.gz.asc  # to show output
   echo -e "\n!!!! GPG Signature FAILED. Not proceeding with autobuild !!!!\n\n"
-  exit 127
+  # exit 127
 fi
 
 tar xzf openconnect-${oc_ver}.tar.gz
